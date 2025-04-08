@@ -4,88 +4,92 @@ Here’s a Linux Administration Commands Cheat Sheet to help you with the most c
 
 1. System Information
 Display system information (OS, kernel, architecture, etc.):
-'''bash
-uname -a
-'''
 
+bash
+```
+uname -a
+```
 Display detailed information about the system:
 
- bash
-
+bash
+```
 uname -r
-
+```
 Display OS version:
 
  bash
-
+```
 cat /etc/os-release
-
+```
 Display system uptime and load averages:
 
  bash
-
+```
 Uptime
-
+```
 Display the kernel version:
 
  bash
-
+```
 uname -s
-
+```
 Show all logged-in users:
 
  bash
-
+```
 who
-
+```
 Show users currently logged into the system:
 
  bash
-
+```
 w
-
+```
 2. User and Group Management
+   
 Add a new user:
 
  bash
-
+```
 sudo useradd USERNAME
-
+```
+```
 Set password for a user:
-
+```
  bash
-
+```
 sudo passwd USERNAME
-
+```
 Delete a user:
 
  bash
-
+```
 sudo userdel USERNAME
-
+```
 Add a new group:
 
  bash
-
+```
 sudo groupadd GROUPNAME
-
+```
 Add a user to a group:
 
  bash
-
+```
 sudo usermod -aG GROUPNAME USERNAME
-
+```
 Display group memberships for a user:
 
  bash
-
+```
 groups USERNAME
+```
 Display user information:
 
  bash
-
+```
 id USERNAME
-
+```
 List all users:
 
  bash
@@ -96,51 +100,51 @@ cat /etc/passwd
 Create a new directory:
 
  bash
-
+```
 mkdir DIRECTORY_NAME
-
+```
 Remove a directory:
 
  bash
-
+```
 rmdir DIRECTORY_NAME
-
+```
 Change the current directory:
 
  bash
-
+```
 cd DIRECTORY_NAME
-
+```
 List files and directories:
 
  bash
-
+```
 Ls
-
+```
 List all files (including hidden files):
 
  bash
-
+```
 ls -a
-
+```
 Show detailed information about files:
 
  bash
-
+```
 ls -l
-
+```
 Copy a file:
 
  bash
-
+```
 cp SOURCE_FILE DESTINATION
-
+```
 Move or rename a file:
 
  bash
-
+```
 mv SOURCE_FILE DESTINATION
-
+```
 Remove a file:
 
  bash
@@ -447,7 +451,7 @@ Check the status of a service:
 sudo systemctl status SERVICE_NAME
 
 Bonus: Useful Command Options
--h: Human-readable format (e.g., df -h for human-readable disk usage).
+<code> -h: </code> Human-readable format (e.g., df -h for human-readable disk usage).
 
 
 -r: Recursive option for copying or listing directories (cp -r).
