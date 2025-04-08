@@ -4,9 +4,9 @@ Here’s a Linux Administration Commands Cheat Sheet to help you with the most c
 
 1. System Information
 Display system information (OS, kernel, architecture, etc.):
-''' bash '''
-
-'''uname -a '''
+'''bash
+uname -a
+'''
 
 Display detailed information about the system:
 
